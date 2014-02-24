@@ -1,32 +1,42 @@
 \documentclass[10pt]{article}
 
 \usepackage[pdftex]{graphicx}% Adds the ability to include images 
-\usepackage[a4paper]{geometry}
+\usepackage[margin=2.5cm, a4paper]{geometry}
 \usepackage[T1]    {fontenc }% Allow accented output charachters
 \usepackage[utf8]  {inputenc}% Allow accented input charachters 
 \usepackage    {xcolor   }% Colors are fun :)
 \usepackage{array}
 \usepackage        {lmodern }% Modern output font 
+\usepackage{amsmath,amssymb,latexsym}
+\usepackage{fancyhdr}
+\setlength{\headheight}{20pt}
 
 \definecolor{lightgray}{gray}{0.8}
+
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
-\title{\bfseries\Huge Gábor Bernát}
-\author{bernat@primeranks.net}
-\date{}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\emph{Gábor Bernát}\\\thepage}
+\fancyfoot[RO, LE] {bernat@primeranks.net}
+\fancyfoot[LO, RE] {$+36$--$30$--$522$--$0450$}
 
 \begin{document}
 
-\begin{minipage}{0.55\textwidth}
+\begin{minipage}{0.65\textwidth}
 \begingroup
 \let\center\flushleft
-\let\endcenter\endflushleft
-\maketitle
+\textbf{\Huge{\MakeUppercase{Gábor Bernát}}}\\
+\begin{alignat*}{100}
+\mbox{+}36\mbox{--}30\mbox{--}522\mbox{--}0450 \mbox{\hspace{0.1cm}} &\Diamond \mbox{\hspace{0.1cm}bernat@primeranks.net} \\
+\mbox{Róna utca} 105\mbox{A}. 12               \mbox{\hspace{0.1cm}} &\Diamond \mbox{\hspace{0.1cm}Budapest, Hungary,} 1151  
+\end{alignat*}
 \endgroup
 \end{minipage}
-\begin{minipage}{0.35\textwidth}
+\begin{minipage}{0.25\textwidth}
 \flushright{\includegraphics[width=3.5cm]{img/foto.jpg}}
 \end{minipage}
 
