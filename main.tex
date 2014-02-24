@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+
+\usepackage[pdftex]{graphicx}% Adds the ability to include images 
+\usepackage[a4paper]{geometry}
+\usepackage[T1]    {fontenc }% Allow accented output charachters
+\usepackage[utf8]  {inputenc}% Allow accented input charachters 
+\usepackage    {xcolor   }% Colors are fun :)
+\usepackage{array}
+\usepackage        {lmodern }% Modern output font 
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\title{\bfseries\Huge Gábor Bernát}
+\author{bernat@primeranks.net}
+\date{}
+
+\begin{document}
+
+\begin{minipage}{0.55\textwidth}
+\begingroup
+\let\center\flushleft
+\let\endcenter\endflushleft
+\maketitle
+\endgroup
+\end{minipage}
+\begin{minipage}{0.35\textwidth}
+\flushright{\includegraphics[width=3.5cm]{img/foto.jpg}}
+\end{minipage}
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+2011--2013&{\bf MSc in Informatic engineer, with major in \emph{Applied informatics} at Budapest University of Technology and Economics, Hungary.}\\[5pt]
+2007--2011&BSc in Computer Science, Sapientia -- Hungarian University of Transylvania, Romania.\\
+\end{tabular}
+
+\end{document}
