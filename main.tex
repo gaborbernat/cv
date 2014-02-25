@@ -1,7 +1,7 @@
 \documentclass[10pt]{article}
 
 \usepackage[pdftex]{graphicx}% Adds the ability to include images 
-\usepackage[margin=2.5cm, a4paper]{geometry}
+\usepackage[margin=2.5cm, top=1cm, a4paper]{geometry}
 \usepackage[T1]    {fontenc }% Allow accented output charachters
 \usepackage[utf8]  {inputenc}% Allow accented input charachters 
 \usepackage    {xcolor   }% Colors are fun :)
@@ -10,6 +10,7 @@
 \usepackage{amsmath,amssymb,latexsym}
 \usepackage{fancyhdr}
 \setlength{\headheight}{20pt}
+\usepackage{sectsty}
 
 \definecolor{lightgray}{gray}{0.8}
 
@@ -23,27 +24,39 @@
 \fancyfoot[C]{\emph{Gábor Bernát}\\\thepage}
 \fancyfoot[RO, LE] {bernat@primeranks.net}
 \fancyfoot[LO, RE] {$+36$--$30$--$522$--$0450$}
+\renewcommand{\headrulewidth}{0pt}
 
+\sectionfont{\fontsize{12}{15}\selectfont}
 \begin{document}
 
 \begin{minipage}{0.65\textwidth}
-\begingroup
-\let\center\flushleft
+\begin{center}
 \textbf{\Huge{\MakeUppercase{Gábor Bernát}}}\\
+\baselineskip=0pt
 \begin{alignat*}{100}
-\mbox{+}36\mbox{--}30\mbox{--}522\mbox{--}0450 \mbox{\hspace{0.1cm}} &\Diamond \mbox{\hspace{0.1cm}bernat@primeranks.net} \\
-\mbox{Róna utca} 105\mbox{A}. 12               \mbox{\hspace{0.1cm}} &\Diamond \mbox{\hspace{0.1cm}Budapest, Hungary,} 1151  
+\mbox{+}36\mbox{--}30\mbox{--}522\mbox{--}0450 \mbox{\hspace{0.1cm}}  &\Diamond \mbox{\hspace{0.1cm}bernat@primeranks.net} \\
+\mbox{Róna utca } 105\mbox{A}. 12               \mbox{\hspace{0.1cm}} &\Diamond \mbox{\hspace{0.1cm}Budapest, Hungary, } 1151  
 \end{alignat*}
-\endgroup
+\end{center}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
-\flushright{\includegraphics[width=3.5cm]{img/foto.jpg}}
+\flushright{\includegraphics[width=2.5cm]{img/foto.jpg}}
 \end{minipage}
 
-\section*{Education}
+\section*{\MakeUppercase{Summary}}
+\leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
+\vskip\medskipamount % ditto
+
+Not much at the moment.
+
+\section*{\MakeUppercase{Education}}
+\leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
+\vskip\medskipamount % ditto
+
 \begin{tabular}{L!{\VRule}R}
-2011--2013&{\bf MSc in Informatic engineer, with major in \emph{Applied informatics} at Budapest University of Technology and Economics, Hungary.}\\[5pt]
-2007--2011&BSc in Computer Science, Sapientia -- Hungarian University of Transylvania, Romania.\\
+2011--2013&\textbf{Budapest University of Technology and Economics, Hungary.} Master's degree in Software Engineering  with major in \emph{applied informatics}. \\
+& \\
+2007--2011&\textbf{Sapientia -- Hungarian University of Transylvania, Romania.} Bachelor's degree in Computer Science.\\
 \end{tabular}
 
 \end{document}
