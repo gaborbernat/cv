@@ -1,4 +1,11 @@
-cv [![PDF Status](https://www.sharelatex.com/github/repos/gaborbernat/cv/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/gaborbernat/cv/builds/latest/output.pdf)
-==
+![Build LaTeX document](https://github.com/gaborbernat/cv/workflows/Build%20LaTeX%20document/badge.svg)
 
-Contains my resume as LaTex document. I'm using TexLive (full) with pdflatex main.tex to build it. 
+Contains my resume as `LaTex` document.
+
+## Building
+
+I'm using TexLive (base) with some extra packages (`sectsty`, `dashrule`, `ifmtarg`). To build it invoke:
+
+```bash
+latexmk main.tex
+```
