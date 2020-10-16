@@ -1,6 +1,7 @@
 ![Build LaTeX document](https://github.com/gaborbernat/cv/workflows/Build%20LaTeX%20document/badge.svg)
+![Build LaTeX document](https://github.com/gaborbernat/cv/workflows/Build%20LaTeX%20document/badge.svg)
 
-Contains my resume as `LaTex` document.
+Contains my resume as `LaTex` (and as PDF under `gh-pages` branch) document.
 
 ## Building
 
