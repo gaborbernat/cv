@@ -25,3 +25,4 @@
 *.fls
 *.tex~
 *.fdb_latexmk
+__latexindent_temp.tex

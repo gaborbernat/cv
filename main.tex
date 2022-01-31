@@ -25,8 +25,8 @@
 \fancyhead{}
 \fancyfoot{}
 \fancyfoot[C]{\emph{Bernát Gábor}\\\thepage}
-\fancyfoot[RO, LE] {gaborjbernat@gmail.com}
-\fancyfoot[LO, RE] {$+44$--$79$--$1197$--$0265$}
+\fancyfoot[RO, L] {gaborjbernat@gmail.com}
+\fancyfoot[LO, R] {$+44$--$79$--$1997$--$0265$}
 \renewcommand{\headrulewidth}{0pt}
 
 \sectionfont{\fontsize{12}{15}\selectfont}
@@ -47,42 +47,76 @@
     \baselineskip=0pt
     \begin{alignat*}{100}
       \mbox{+}44\mbox{--}79\mbox{--}1997\mbox{--}0265 \mbox{\hspace{0.1cm}} & \Diamond \mbox{\hspace{0.1cm}gaborjbernat@gmail.com} \\
-      70 \mbox{\ Elibank Road, SE9 1QL} \mbox{\hspace{0.1cm}}               & \Diamond \mbox{\hspace{0.1cm}London, United Kingdom}
+      \mbox{https://bernat.tech} \mbox{\hspace{0.1cm}}               & \Diamond \mbox{\hspace{0.1cm}London, United Kingdom}
     \end{alignat*}
   \end{center}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
-  \flushright{\includegraphics[width=2.5cm]{img/foto.jpg}}
+  \flushright{\includegraphics[width=2.5cm]{img/foto.jpeg}}
 \end{minipage}
 
 \section*{\MakeUppercase{Summary}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount % 
 
-Bernát (first name) Gábor (surname) is a young software engineer believer of the polyglot
-programming, currently working full time in Budapest at ,,Gravity -- Rock solid
-recommendations'' as software and integration engineer. Finished his master studies in $2013$ with
-outstanding results in the domain of computer science.
+Bernát (first name) Gábor (surname) is a senior software engineer who believes in polyglot
+programming (though lately heavily focuses on Python). Currently working full time in London at Bloomberg. He focuses on
+adding a quality control layer on the data ingestion pipeline built on top of a microservice framework.
+He finished his master studies in $2013$ with outstanding results in the domain of computer science.
 
 
-Amassed throughout the years vast theoretical and practical knowledge base in areas such as
-software development, build systems, recommendation engines, operational tasks, customer communication,
-data science, CAD, computer vision, mobile robots, and so on. He is also a conscious self-driven learner
-and performer having written multiple technical articles in various domains of the IT.
-
-Sample codes and reports from projects participated in may be found at \emph{https://github.com/gaborbernat}
-and \emph{http://primeranks.net/yeti/Work/Portofolio}.
+He is a regular Python conference speaker, and authored/maintains many high-profile Python libraries and tools.
+He is primaraly focused on packaging and testing (virtualenv, tox, pipx, flit, build). He is also a conscientious, self-driven
+learner and performer, having written multiple successful technical articles on his blog.
 
 \section*{\MakeUppercase{Experience}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount % 
 
-\twoColumns{2011 September--on going}{ \textbf{Gravity Research \& Development} }
-\twoColumns{Budapest, Hungary}{ \emph{Software and integration engineer} }
+\twoColumns{2015--present}{ \textbf{Open Source} }
+\twoColumns{London, United Kingdom}{ \emph{Open source software developer} }
 
-The company provides hundred millions of recommendations on a Software--as--a--Service platform
-on a daily basis to clients such as rci\@.com, dailymotion\@.com, livejasmin\@.com, allegro\@.pl,
-edigital\@.hu and etcetera. Analyzing customer systems; planning, over viewing and doing the
+Authored and maintains 20+ Python open source libraries or tools; for a list of high-profile examples see
+https://bernat.tech/about. Maintainer of the virtualenv package since 2018. Rewrote and re-released it with success in 2020.
+Maintainer of the tox tool since 2017 and close to finishing a rewrite of it. Other high-profile projects he maintains/authored: pipx,
+build, filelock, platformdirs, flit. Regular speaker at the EuroPython and PyCon US conferences (list of recordings at 
+https://bernat.tech/presentations). Held a workshop about Python packaging at PyCon US 2021.
+
+Received the Python Software Foundation Fellow distinction in 2021 Q3 for outstanding contributions to the Python ecosystem.
+Technical reviewer for the book ''Python Object-Oriented Programming 4th edition'' by Steven Lott and Dusty Phillips. Wrote two
+blog-post series that made number one on Hackerranks (python type hints and packaging).
+
+\localsep
+\vskip\bigskipamount % 
+
+\twoColumns{2016 April--present}{ \textbf{Bloomberg} }
+\twoColumns{London, United Kingdom}{ \emph{Senior Software Engineer} }
+
+Works on the Data Technology department's quality control team. Responsible for designing and implementing a Python library/framework
+that allows financial analysts with limited computer-science knowledge (think simple Python scripting) to express heuristic rules
+(ones we can describe - type, range, relations etc.) and semi-automatic rules (i.e. using historical values with statistical models).
+The system runs over a microservice framework (think Amazon Lambda) and automatically collects and tracks metadata in the
+background which allows answering provenance and data ingestion questions (e.g. what rule checked this field, 
+how often is this rule broken, validation coverage and efficacy of the pipeline).
+
+Designs and implements a system that calculates metrics about the quality of the data ingestion pipeline and the dataset itself.
+Works with other teams to come up with schemas for information to track and then on adoption of those by various
+systems in the pipeline. Gives presentations at internal meetups and holds workshops about how to use the quality check system. 
+
+Member of the Python Guild Chairs: a group of around 10 engineers fostering the usage and best-practices of the Python language
+within the company. Chaired the conference working group since 2018. Maintainer of many high-profile internal tools: one that automatically
+generates type information from schemas, HTTP client against a proprietary protocol,  Python abstraction over a service that allows access
+of securities, Jenkins CI pipeline library etcetera.
+
+\localsep
+\vskip\bigskipamount % 
+
+\twoColumns{2011 September--2016 March}{ \textbf{Gravity Research \& Development} }
+\twoColumns{Budapest, Hungary}{ \emph{Software and Integration Engineer} }
+
+The company provides hundreds of millions recommendation on a Software--as--a--Service platform
+on a daily basis to clients such as dailymotion\@.com, livejasmin\@.com, allegro\@.pl,
+edigital\@.hu etcetera. Analyzing customer systems; planning, designing and implementing the
 integration of them with the recommendation platform. Performing various AB tests and improvements
 after the integration to achieve optimal results, and maximize customer satisfaction. Continuously
 keep in touch with customers for fast and accurate feedback on current satisfaction and requirements.
@@ -90,8 +124,8 @@ keep in touch with customers for fast and accurate feedback on current satisfact
 Planning and implementing various internal systems to help with the integration flow and customer
 experience (bash shell \& python scripts, PHP \& JavaScript based reporting web page). Programming
 and maintaining a recommendation engine demo application (\@.NET \& Silverlight). Transforming the
-old and hard to modify Ant build system to Gradle. Extending the core system with various new features.
-Participating in various conferences to keep up to date with industry trends. Taking part of the hiring
+old and hard-to-modify Ant build system to Gradle. Extending the core system with various new features.
+Participating in various conferences to keep up to date with industry trends. Taking part in the hiring
 process for new integration engineers, training them and functioning as mentor to them.
 
 \localsep
@@ -107,38 +141,6 @@ documentation, as well co-supervisoring another person on the project. You can v
 
 \localsep
 
-\twoColumns{2007 - 2010}{ \textbf{Ziff Davis Enterprise – The DevShed Network}}
-\twoColumns{HQ: Fort Lauderdale, USA}{ \emph{Technical writerer} }
-
-Writing articles with technical content on various fields of IT including both introductory and advanced
-techniques for programmers, hardware component reviews and various internet/computer usage tips.
-All the articles are published in one of the $13+$ technology websites of the company.
-I have multiple articles written about C/C$++$, coding styles, and so forth that are number one
-in the Google search and have a \textasciitilde$65,000+$ unique views. You can obtain a full list of them at
-\emph{http://primeranks.net/php/articles.php}.
-
-\localsep
-
-\twoColumns{January 2010 - April 2010}{ \textbf{Simon Fraser University}}
-\twoColumns{Vancouver,Canada}{ \emph{System architect and implementation} }
-
-Coded the image processing and acquisition algorithm (in C/C++ language) for a research whose
-ultimate goal is to develop robots that will play hockey on their own with artificial intelligence. Fur-
-thermore made the integration of the written code to the .NET environment and developed the user
-interface for it in C\#. This was a team effort (of four) and successfully managed to get the system up and running with an
-acceptable error rate. The project was part of a student exchange program through what I attended for a semester classes at
-the Simon Fraser University in Vancouver, Canada. Gained foreign experience.
-
-\localsep
-
-\twoColumns{October 2007 - Juny 2008}{ \textbf{XData Consulting SRL – http://cadelix\@.ro}}
-\twoColumns{Târgu Mureş, Romania}{ \emph{Junior Software Develper} }
-
-Written a registry editor for internal usage (in C++) using the MFC library for user interface.
-Created the basic build up (basic geometrical classes, serialization system, interaction/transformation
-and drawing of geometrical objects in MFC) for CAD software developed by the company.
-Used the C++ template based loki library. Amassed working experience and techniques at a professional company.
-
 \section*{\MakeUppercase{Education}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount % 
@@ -146,25 +148,25 @@ Used the C++ template based loki library. Amassed working experience and techniq
 \twoColumns{2011 September--2013 June}{ \textbf{Budapest University of Technology and Economics, Hungary.} }
 \twoColumns{}{Master's degree in Engineering Information Technologist. }
 
-Major in \emph{applied informatics} (grade $4.57/5$ -- excelent). Thesis: ,,Analysis of data mining and
-recommendation services: open source solutions on a scalable framework'', \url{http://goo.gl/0FICGX}.
+Major in \emph{applied informatics} (grade $4.57/5$ -- excellent). Thesis: "Analysis of data mining and
+recommendation services: open source solutions on a scalable framework", \url{http://goo.gl/0FICGX}.
 
 \localsep
 
 \twoColumns{2007 September--2011 June}{ \textbf{Sapientia -- Hungarian University of Transylvania, Romania.} }
 \twoColumns{}{Bachelor's degree in Computer Science (grade $9.70/10$).}
 
-Thesis: ,,Regional segmentation of images with B--Spline level set models'', \url{http://goo.gl/fCigX6}.
+Thesis: "Regional segmentation of images with B--Spline level set models", \url{http://goo.gl/fCigX6}.
 
 \section*{\MakeUppercase{Technical strengths}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount % 
 
 \begin{tabular}{l p{32em}}
-  \textbf{Computer languages} & C/C$++$, C\#, \emph{Java}, Groovy, \emph{Python}, Bash, JavaScript, CSS, HTML, R, LaTex, reStructuredText, PHP \\
-  \textbf{Protocols and apis} & XML, JSON, REST, jQuery, Qt, SqlAlchemy, JsonRpc, ggplot                                                       \\
-  \textbf{Databases}          & MySQL (Percona), basic of Cassandra, Hadoop (HBase), Redis                                                     \\
-  \textbf{Tools}              & git, vim, tmux, Gradle, Arch Linux, Eclipse, Netbeans, Intellij IDEA, Visual Studio, RStudio, Maven, Gradle,
-  IPython, SQuirreL SQL Client, JIRA, Confluence                                                                                               \\
+  \textbf{Computer languages} & C/C$++$, C\#, \emph{Java}, Groovy, \emph{Python}, Bash, JavaScript, TypeScript, CSS, HTML, LaTex, reStructuredText, PHP \\
+  \textbf{Protocols and apis} & XML, JSON, REST, BAS, jQuery, Qt, SqlAlchemy, JsonRpc, ggplot                                                           \\
+  \textbf{Databases}          & comdb2, MySQL (Percona), basic of Cassandra, Hadoop (Hive), Redis                                                       \\
+  \textbf{Tools}              & git, vim, tmux, Gradle, Arch Linux, Eclipse, Netbeans, Intellij IDEA, Visual Studio Code, Maven, Gradle,
+  Jupyter, tox, JIRA, Confluence                                                                                                                         \\
 \end{tabular}
 \end{document}
