@@ -2,8 +2,8 @@
 
 \usepackage[pdftex]{graphicx}% Adds the ability to include images
 \usepackage[margin=2.5cm, top=1cm, a4paper]{geometry}
-\usepackage[T1]    {fontenc }% Allow accented output charachters
-\usepackage[utf8]  {inputenc}% Allow accented input charachters
+\usepackage[T1]    {fontenc }% Allow accented output characters
+\usepackage[utf8]  {inputenc}% Allow accented input characters
 \usepackage    {xcolor   }% Colors are fun :)
 \usepackage{array}
 \usepackage        {lmodern }% Modern output font
@@ -12,8 +12,13 @@
 \setlength{\headheight}{20pt}
 \usepackage{sectsty}
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue!50!black,
+  citecolor=black
+}
 \usepackage{dashrule}
-\usepackage{graphicx}
 
 \definecolor{lightgray}{gray}{0.8}
 
@@ -51,7 +56,9 @@
       \mbox{\hspace{0.1cm}gaborjbernat@gmail.com} \\
       \mbox{\href{https://bernat.tech}{bernat.tech}} \mbox{\hspace{0.1cm}} & \Diamond
       \mbox{\hspace{0.1cm}\href{https://github.com/gaborbernat}{github.com/gaborbernat}} \\
-      \mbox{Los Angeles, USA}
+      \mbox{\href{https://www.linkedin.com/in/gaborbernat}{linkedin.com/in/gaborbernat}}
+      \mbox{\hspace{0.1cm}} & \Diamond
+      \mbox{\hspace{0.1cm}Los Angeles, USA}
     \end{alignat*}
   \end{center}
 \end{minipage}
@@ -63,12 +70,16 @@
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount %
 
-Senior software engineer at Bloomberg, working remotely from Los Angeles since 2022, with 13+ years of experience
+Senior software engineer at \href{https://www.bloomberg.com/company/}{Bloomberg}, working remotely from Los Angeles
+since 2022, with 13+ years of experience
 spanning data ingestion pipelines, quality control systems, developer tooling, and open source leadership. Leads
 cross-cutting initiatives in Python packaging, developer experience, and platform engineering.
-Maintains 30+ Python ecosystem projects including virtualenv, tox, build, pipx,
-and pipdeptree. Python Software Foundation Fellow (2021). Delivered 15+ talks at PyCon US, EuroPython, PyTexas, and
-PyLondinium (2018--2025) on packaging standards, virtual environments, type hints, and Python--Rust interoperability.
+Maintains 30+ Python ecosystem projects including \href{https://github.com/pypa/virtualenv}{virtualenv},
+\href{https://github.com/tox-dev/tox}{tox}, \href{https://github.com/pypa/build}{build},
+\href{https://github.com/pypa/pipx}{pipx}, and \href{https://github.com/tox-dev/pipdeptree}{pipdeptree}. Python
+Software Foundation \href{https://www.python.org/psf/fellows/}{Fellow} (2021). Delivered
+\href{https://bernat.tech/presentations}{15+ talks} at PyCon US, EuroPython, PyTexas, and PyLondinium
+(2018--2025) on packaging standards, virtual environments, type hints, and Python--Rust interoperability.
 
 \section*{\MakeUppercase{Experience}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
@@ -132,10 +143,12 @@ such as dailymotion\@.com and allegro\@.pl. Handled client integrations, A/B tes
 \localsep
 \vskip\bigskipamount %
 
-\twoColumns{2011 May--August}{ \textbf{OpenCV -- Google Summer of Code 2011} }
+\twoColumns{2011 May--August}{ \textbf{\href{https://opencv.org}{OpenCV} --
+\href{https://summerofcode.withgoogle.com}{Google Summer of Code} 2011} }
 \twoColumns{Târgu Mureş, Romania}{ \emph{Technical writer and programmer} }
 
-Created reStructuredText tutorials for the OpenCV library and helped architect its documentation system.
+Created reStructuredText tutorials for the \href{https://opencv.org}{OpenCV} library and helped architect its
+documentation system.
 
 \localsep
 
@@ -159,11 +172,15 @@ Author and primary maintainer of 30+ Python open source projects. Maintainer of
 \href{https://github.com/tox-dev/PyVenvManage}{PyVenvManage} and
 \href{https://github.com/tox-dev/jetbrains-fish}{jetbrains-fish}.
 
-Involved in Python packaging standards (PEP-517, 518, 660, 662). Recent work includes Python/Rust projects
+Involved in Python packaging standards (\href{https://peps.python.org/pep-0517/}{PEP-517},
+  \href{https://peps.python.org/pep-0518/}{518}, \href{https://peps.python.org/pep-0660/}{660},
+\href{https://peps.python.org/pep-0662/}{662}). Recent work includes Python/Rust projects
 (\href{https://github.com/tox-dev/pyproject-fmt}{pyproject-fmt},
-\href{https://github.com/tox-dev/toml-fmt}{toml-fmt}). Python Software Foundation Fellow (2021 Q3). Technical reviewer
-for ''Python Object-Oriented Programming 4th edition'' by Steven Lott and Dusty Phillips. Blog post series on Python
-type hints and packaging reached number one on Hacker News.
+\href{https://github.com/tox-dev/toml-fmt}{toml-fmt}). Python Software Foundation
+\href{https://www.python.org/psf/fellows/}{Fellow} (2021 Q3). Technical reviewer for
+\href{https://www.packtpub.com/en-us/product/python-object-oriented-programming-9781801077262}{''Python Object-Oriented
+Programming 4th edition''} by Steven Lott and Dusty Phillips. Blog post series on Python type hints and packaging
+reached number one on Hacker News.
 
 \section*{\MakeUppercase{Education}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
