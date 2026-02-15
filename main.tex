@@ -33,93 +33,90 @@
 \newcolumntype{P}[1]{>{\raggedleft\arraybackslash}m{#1}}
 
 \newcommand{\twoColumns}[2]{
-  \noindent\begin{tabular}{ p{31em}  P{12.5em} }
+  \noindent
+  \begin{tabular}{ p{31em}  P{12.5em} }
     #2 & \emph{#1} \\
-\end{tabular}
+  \end{tabular}
 }
 \newcommand{\localsep}{\noindent\hdashrule[0.5ex]{46em}{1pt}{4pt}}
 
 \begin{document}
 
 \begin{minipage}{0.65\textwidth}
-	\begin{center}
-		\textbf{\Huge{\MakeUppercase{Bernát Gábor}}}\\
-		\baselineskip=0pt
-		\begin{alignat*}{100}
-			\mbox{+}44\mbox{--}79\mbox{--}1997\mbox{--}0265 \mbox{\hspace{0.1cm}} & \Diamond \mbox{\hspace{0.1cm}gaborjbernat@gmail.com} \\
-			\mbox{https://bernat.tech} \mbox{\hspace{0.1cm}}                      & \Diamond \mbox{\hspace{0.1cm}Los Angeles, USA}
-		\end{alignat*}
-	\end{center}
+  \begin{center}
+    \textbf{\Huge{\MakeUppercase{Bernát Gábor}}}\\
+    \baselineskip=0pt
+    \begin{alignat*}{100}
+      \mbox{+}1\mbox{--}747\mbox{--}777\mbox{--}0357 \mbox{\hspace{0.1cm}} & \Diamond
+      \mbox{\hspace{0.1cm}gaborjbernat@gmail.com} \\
+      \mbox{https://bernat.tech} \mbox{\hspace{0.1cm}}                      & \Diamond
+      \mbox{\hspace{0.1cm}Los Angeles, USA}
+    \end{alignat*}
+  \end{center}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
-	\flushright{\includegraphics[width=2.5cm]{img/foto.jpeg}}
+  \flushright{\includegraphics[width=2.5cm]{img/foto.jpeg}}
 \end{minipage}
 
 \section*{\MakeUppercase{Summary}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount %
 
-Bernát (first name) Gábor (surname) is a senior software engineer who believes in polyglot
-programming (though lately heavily focuses on Python). Currently working full time in Los Angeles at Bloomberg.
-He focuses on adding a quality control layer on the data ingestion pipeline built on top of a microservice framework
-and generate metrics on how the entire pipeline performs to drive financial analysts day to day work on how they can
-improve the non-stock exchange data onboarding for the company.
-He finished his master studies in $2013$ with outstanding results in the domain of computer science.
-
-
-He is a regular Python conference speaker, and authored/maintains many high-profile Python libraries and tools.
-He is primaraly focused on packaging and testing (virtualenv, tox, pipx, pipdeptree, build). He is also a conscientious, self-driven
-learner and performer, having written multiple successful technical articles on his blog.
+Senior software engineer at Bloomberg, working remotely from Los Angeles since 2022, with 13+ years of experience
+spanning data ingestion pipelines, quality control systems, developer tooling, and open source leadership. Leads
+cross-cutting initiatives in Python packaging, developer experience, and platform engineering.
+Maintains 30+ Python ecosystem projects including virtualenv, tox, build, pipx,
+and pipdeptree. Python Software Foundation Fellow (2021). Delivered 15+ talks at PyCon US, EuroPython, PyTexas, and
+PyLondinium (2018--2025) on packaging standards, virtual environments, type hints, and Python--Rust interoperability.
 
 \section*{\MakeUppercase{Experience}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount %
 
-\twoColumns{2015--present}{ \textbf{Open Source} }
-\twoColumns{Los Angeles, USA}{ \emph{Open source software developer} }
+\twoColumns{2025 April -- present}{ \textbf{Bloomberg} }
+\twoColumns{Los Angeles, USA (remote)}{ \emph{Senior Software Engineer -- Developer Experience} }
 
-Authored and maintains 20+ Python open source libraries or tools; for a list of high-profile examples see
-https://bernat.tech/about. Maintainer of the virtualenv package since 2018. Rewrote and re-released it with success in 2020.
-Maintainer of the tox tool since 2017 and close to finishing a rewrite of it. Other high-profile projects he maintains/authored: pipx,
-build, filelock, platformdirs, pipdeptree, pytest-env. Regular speaker at the EuroPython and PyCon US conferences (list of recordings at
-https://bernat.tech/presentations). Held a workshop about Python packaging at PyCon US 2021.
+Works on internal artifact repository hosting and developer tooling with broad cross-team impact spanning 13+
+organizations. Led development of a portal for Python package and Docker image discovery with namespace browsing,
+wheel compatibility filtering, and a two-tier caching strategy (Redis with in-memory fallback), optimizing cache
+loading by 25\% using trie-based data structures. Built notification infrastructure for artifact events (Kafka,
+webhook with HMAC-SHA256 authentication).
 
-Received the Python Software Foundation Fellow distinction in 2021 Q3 for outstanding contributions to the Python ecosystem.
-Technical reviewer for the book ''Python Object-Oriented Programming 4th edition'' by Steven Lott and Dusty Phillips. Wrote two
-blog-post series that made number one on Hackerranks (python type hints and packaging).
+Overhauled authentication and observability for an enterprise code search platform, migrating from Lua scripts to a
+Go-based authentication service and adding fine-grained metrics per data source. Led CPython 3.14 enablement across
+20+ internal services and static analysis tooling. Created and owned multiple linter integrations adopted across the
+company's inner-source static analysis ecosystem.
+
+Built a Go backend for an internal conference platform with bulk sync endpoints and 85\% database query reduction. Led
+the Python Guild's Packaging Working Group. Speaker at
+PyTexas 2025 and PyCon US 2025.
 
 \localsep
 \vskip\bigskipamount %
 
-\twoColumns{2022 June -- present}{ \textbf{Bloomberg} }
-\twoColumns{Los Angeles, USA}{ \emph{Senior Software Engineer} }
+\twoColumns{2022 June -- 2025 April}{ \textbf{Bloomberg} }
+\twoColumns{Los Angeles, USA (remote)}{ \emph{Senior Software Engineer -- Data Technologies, Quality Control} }
 
-Works on the Data Technology department's quality control team on creating a sampling pipeline, extend the departments
-metric calculation with dimmensions such as timeliness, remediation and better scalability. Extend the departments tracing functionality
-with subtrees. Lead the Python Guilds packaging working group and create a website to help discoverability and ease of contributions
-within the company.
+Built metrics ingestion orchestration services for data pipeline quality measurement with deduplication, failure
+tracking, and workflow orchestration. Developed S3 polling services and a web portal for storage platform management
+with authentication, credential management, and configuration UIs. Created a FastAPI single sign-on integration
+library adopted across multiple services. Extended metric calculation with dimensions such as timeliness and
+remediation. Led the Python Guild's Packaging Working Group and built the internal Python package
+registry site. Created an internal
+conference platform for Guild Week events. Maintained internal tools including
+type generation from schemas, HTTP client libraries, and Jenkins CI pipeline libraries.
 
 \localsep
 \vskip\bigskipamount %
 
 \twoColumns{2016 April--2022 June}{ \textbf{Bloomberg} }
-\twoColumns{London, United Kingdom}{ \emph{Senior Software Engineer} }
+\twoColumns{London, United Kingdom}{ \emph{Senior Software Engineer -- Data Technologies, Quality Control} }
 
-Works on the Data Technology department's quality control team. Responsible for designing and implementing a Python library/framework
-that allows financial analysts with limited computer-science knowledge (think simple Python scripting) to express heuristic rules
-(ones we can describe - type, range, relations etc.) and semi-automatic rules (i.e. using historical values with statistical models).
-The system runs over a microservice framework (think Amazon Lambda) and automatically collects and tracks metadata in the
-background which allows answering provenance and data ingestion questions (e.g. what rule checked this field,
-how often is this rule broken, validation coverage and efficacy of the pipeline).
-
-Designs and implements a system that calculates metrics about the quality of the data ingestion pipeline and the dataset itself.
-Works with other teams to come up with schemas for information to track and then on adoption of those by various
-systems in the pipeline. Gives presentations at internal meetups and holds workshops about how to use the quality check system.
-
-Member of the Python Guild Chairs: a group of around 10 engineers fostering the usage and best-practices of the Python language
-within the company. Chaired the conference working group since 2018. Maintainer of many high-profile internal tools: one that automatically
-generates type information from schemas, HTTP client against a proprietary protocol,  Python abstraction over a service that allows access
-of securities, Jenkins CI pipeline library etcetera.
+Core developer of the Business Rule Engine (BRE), a Python framework enabling financial analysts to author heuristic
+and statistical validation rules over a microservice platform. The system automatically collected metadata for
+provenance and data ingestion quality tracking. Built metrics systems measuring pipeline quality and dataset health.
+Led the Python Guild's Conference Working Group (2017--2022) and served as Guild Chair. Maintained internal developer
+tools (type generation, HTTP client, networking libraries, CI pipeline library).
 
 \localsep
 \vskip\bigskipamount %
@@ -127,32 +124,35 @@ of securities, Jenkins CI pipeline library etcetera.
 \twoColumns{2011 September--2016 March}{ \textbf{Gravity Research \& Development} }
 \twoColumns{Budapest, Hungary}{ \emph{Software and Integration Engineer} }
 
-The company provides hundreds of millions recommendation on a Software--as--a--Service platform
-on a daily basis to clients such as dailymotion\@.com, livejasmin\@.com, allegro\@.pl,
-edigital\@.hu etcetera. Analyzing customer systems; planning, designing and implementing the
-integration of them with the recommendation platform. Performing various AB tests and improvements
-after the integration to achieve optimal results, and maximize customer satisfaction. Continuously
-keep in touch with customers for fast and accurate feedback on current satisfaction and requirements.
-
-Planning and implementing various internal systems to help with the integration flow and customer
-experience (bash shell \& python scripts, PHP \& JavaScript based reporting web page). Programming
-and maintaining a recommendation engine demo application (\@.NET \& Silverlight). Transforming the
-old and hard-to-modify Ant build system to Gradle. Extending the core system with various new features.
-Participating in various conferences to keep up to date with industry trends. Taking part in the hiring
-process for new integration engineers, training them and functioning as mentor to them.
+Built and maintained a recommendation platform serving hundreds of millions of daily recommendations (SaaS) for clients
+such as dailymotion\@.com and allegro\@.pl. Handled client integrations, A/B testing, internal tooling, and mentoring.
 
 \localsep
 \vskip\bigskipamount %
 
-\twoColumns{2011 May--August}{ \textbf{OpenCV (Open Source Computer Vision Library)} }
-\twoColumns{Târgu Mureş, Romania}{ \emph{Technical writer and programmer (part of Google Summer of Code 2011)} }
+\twoColumns{2011 May--August}{ \textbf{OpenCV -- Google Summer of Code 2011} }
+\twoColumns{Târgu Mureş, Romania}{ \emph{Technical writer and programmer} }
 
-Learned and used the reStructuredText documentation system to create various tutorials for the OpenCV
-library in both HTML and PDF output format. Helping to architect and create the system used for the
-documentation, as well co-supervisoring another person on the project. You can view the end result here:
-\emph{http://docs.opencv.org/doc/tutorials/tutorials.html}.
+Created reStructuredText tutorials for the OpenCV library and helped architect its documentation system.
 
 \localsep
+
+\section*{\MakeUppercase{Open Source}}
+\leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
+\vskip\medskipamount %
+
+\twoColumns{2015--present}{ \textbf{Open source software developer} }
+\twoColumns{}{https://bernat.tech/about}
+
+Author and primary maintainer of 30+ Python open source projects. Maintainer of virtualenv (since 2018, rewrote and
+re-released in 2020) and tox (since 2017, completed full rewrite as tox 4). Other high-profile projects: pipx, build,
+filelock, platformdirs, pipdeptree, pytest-env, pyproject-fmt, tox-uv, pre-commit-uv. Co-maintains Bloomberg open
+source projects pytest-memray and attrs-strict. Authored JetBrains plugins PyVenvManage and jetbrains-fish.
+
+Involved in Python packaging standards (PEP-517, 518, 660, 662). Recent work includes Python/Rust projects
+(pyproject-fmt, toml-fmt). Python Software Foundation Fellow (2021 Q3). Technical reviewer for ''Python Object-Oriented
+Programming 4th edition'' by Steven Lott and Dusty Phillips. Blog post series on Python type hints and packaging
+reached number one on Hacker News.
 
 \section*{\MakeUppercase{Education}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
@@ -176,10 +176,11 @@ Thesis: "Regional segmentation of images with B--Spline level set models".
 \vskip\medskipamount %
 
 \begin{tabular}{l p{32em}}
-	\textbf{Computer languages} & C/C$++$, C\#, \emph{Java}, Groovy, \emph{Python}, Bash, JavaScript, TypeScript, CSS, HTML, LaTex, reStructuredText, PHP \\
-	\textbf{Protocols and apis} & XML, JSON, REST, BAS, jQuery, Qt, SqlAlchemy, JsonRpc, ggplot                                                           \\
-	\textbf{Databases}          & comdb2, MySQL (Percona), basic of Cassandra, Hadoop (Hive), Redis                                                       \\
-	\textbf{Tools}              & git, vim, tmux, Gradle, Arch Linux, Eclipse, Netbeans, Intellij IDEA, Visual Studio Code, Maven, Gradle,
-	Jupyter, tox, JIRA, Confluence                                                                                                                        \\
+  \textbf{Languages}      & \emph{Python} (primary), TypeScript, Java, Kotlin, Rust, Go, Bash,
+  Fish, C/C$++$, LaTeX            \\
+  \textbf{Frameworks}     & FastAPI, React, Flask                                                                 \\
+  \textbf{Infrastructure} & Docker, Kubernetes, Redis, PostgreSQL, GitHub Actions, Jenkins                         \\
+  \textbf{Tools}          & git, vim, tox, uv, ruff, pyright, VS Code, IntelliJ IDEA                              \\
+  \textbf{Specialties}    & Developer tooling, packaging, static analysis, distributed systems, data pipelines     \\
 \end{tabular}
 \end{document}
