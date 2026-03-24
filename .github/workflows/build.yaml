@@ -14,12 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout 🛎️
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          persist-credentials: false
       - name: 📕 Compile LaTeX document 📕
-        uses: xu-cheng/latex-action@v4
+        uses: xu-cheng/latex-action@25080975331dc4fc8e6f1af55788e00f84f51fff # v4
         with:
           root_file: main.tex
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
         with:
           name: cv
           path: main.pdf
@@ -35,14 +37,16 @@ jobs:
       contents: write
     steps:
       - name: 🛎️ Checkout 🛎️
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          persist-credentials: false
       - name: Download all the dists
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
         with:
           name: cv
           path: built
       - name: 🚀 Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
         with:
           folder: built
           single-commit: true
