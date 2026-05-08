@@ -70,17 +70,17 @@
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
 \vskip\medskipamount %
 
-Senior software engineer at \href{https://www.bloomberg.com/company/}{Bloomberg} with staff-level scope and impact,
-working remotely from Los Angeles since 2022, with 14+ years of experience spanning developer tooling, platform
-engineering, security infrastructure, and open source ecosystem leadership. Drives technical strategy across 13+
-organizations, owning end-to-end delivery of artifact management, enterprise code search, static analysis, and secret
-scanning platforms. Maintains 30+ Python ecosystem projects including
-\href{https://github.com/pypa/virtualenv}{virtualenv}, \href{https://github.com/tox-dev/tox}{tox},
-\href{https://github.com/pypa/build}{build}, \href{https://github.com/pypa/pipx}{pipx}, and
-\href{https://github.com/tox-dev/pipdeptree}{pipdeptree}. Python Software Foundation
-\href{https://www.python.org/psf/fellows/}{Fellow} (2021). Delivered
-\href{https://bernat.tech/presentations}{15+ talks} at PyCon US, EuroPython, PyTexas, and PyLondinium (2018--2025) on
-packaging standards, supply chain security, virtual environments, and Python--Rust interoperability.
+Senior software engineer at \href{https://www.bloomberg.com/company/}{Bloomberg} operating at staff scope, remote from
+Los Angeles since 2022. Owns architecture and end-to-end delivery of distributed backend platforms, developer APIs,
+and enterprise security infrastructure across 13+ organizations: artifact management, enterprise code search, static
+analysis, and secret scanning. 14+ years building developer tooling used by millions of Python engineers worldwide.
+Maintains 30+ Python ecosystem projects including \href{https://github.com/pypa/virtualenv}{virtualenv},
+\href{https://github.com/tox-dev/tox}{tox}, \href{https://github.com/pypa/build}{build},
+\href{https://github.com/pypa/pipx}{pipx}, and \href{https://github.com/tox-dev/pipdeptree}{pipdeptree}.
+Python Software Foundation \href{https://www.python.org/psf/fellows/}{Fellow} (2021). Delivered
+\href{https://bernat.tech/presentations}{15+ talks and workshops} at PyCon US, EuroPython, PyTexas, and PyLondinium
+(2018--2026) on packaging standards, supply chain security, virtual environments, Python--Rust interoperability, and
+AI-assisted development.
 
 \section*{\MakeUppercase{Experience}}
 \leaders\vrule width \textwidth\vskip0.3pt % or other desired thickness
@@ -89,21 +89,22 @@ packaging standards, supply chain security, virtual environments, and Python--Ru
 \twoColumns{2025 April -- present}{ \textbf{Bloomberg} }
 \twoColumns{Los Angeles, USA (remote)}{ \emph{Senior Software Engineer -- Developer Experience} }
 
-Owns cross-organizational platform delivery spanning artifact management, enterprise code search, static analysis, and
-secret scanning infrastructure. Led development of an artifact repository portal serving thousands of engineers for
-Python package and Docker image discovery, with namespace browsing, wheel compatibility filtering, and self-service
-package lifecycle management. Improved cache performance by 25\% and built real-time notification infrastructure enabling
-downstream consumers to react to artifact events automatically.
+Owns architecture and end-to-end delivery of backend platform services used daily by Bloomberg's 9{,}000+ engineers
+across 13+ organizations. Designed the artifact repository portal and its REST APIs for Python package and Docker
+image discovery: namespace browsing, wheel compatibility filtering, self-service lifecycle management. Improved cache
+hit rate by 25\%. Built event-streaming notification infrastructure on Kafka so downstream services react to artifact
+changes in real time.
 
-Overhauled enterprise code search authentication, replacing fragile Lua scripts with a production-grade Go service
-featuring modern security controls (JWT validation, PKCE, session management). Led the platform's open access sunset.
-Migrated source collection to cloud object storage, parallelized indexing, and resolved a production incident that
-silently dropped 34,591 projects from the search index. Established fine-grained observability across all data sources.
+Replaced the legacy Lua-based authentication layer of enterprise code search with a Go service implementing JWT
+validation, PKCE OAuth2, and session management. Sunset the platform's open-access tier. Migrated source ingestion to
+S3 object storage, parallelized distributed indexing, and led incident response for a silent data-loss bug that had
+dropped 34,591 projects from the search index. Instrumented end-to-end observability across all data sources.
 
-Onboarded secret scanning infrastructure into team standards across 10 repositories. Led CPython 3.14 enablement across
-20+ services. Owned multiple linter integrations across the company's static analysis ecosystem. Built developer
-experience tooling for AI usage tracking. Reduced database queries by 85\% for an internal conference platform. Led the
-Python Guild's Packaging Working Group. Speaker at PyTexas 2025 and PyCon US 2025.
+Rolled out secret-scanning infrastructure across Bloomberg. Led the cross-org CPython 3.14 migration across 20+
+services. Owns linter integrations across the company's static analysis ecosystem and built developer-experience
+tooling for AI usage tracking. Cut database query volume by 85\% for the internal conference platform. Chairs the
+Python Guild's Packaging Working Group; spoke at PyTexas 2025 and PyCon US 2025, and led a solo workshop on
+AI-assisted Python development at PyTexas 2026.
 
 \localsep
 \vskip\bigskipamount %
@@ -111,12 +112,11 @@ Python Guild's Packaging Working Group. Speaker at PyTexas 2025 and PyCon US 202
 \twoColumns{2022 June -- 2025 April}{ \textbf{Bloomberg} }
 \twoColumns{Los Angeles, USA (remote)}{ \emph{Senior Software Engineer -- Data Technologies, Quality Control} }
 
-Built data pipeline quality measurement infrastructure with metrics ingestion, deduplication, and workflow orchestration.
-Developed a storage platform management portal with authentication and configuration UIs. Standardized single sign-on
-across multiple services via a shared integration library. Led an accessibility overhaul of the Guild Week conference
-website with keyboard navigation and screen reader support. Built the internal Python package registry site and
-conference platform. Led the Python Guild's Packaging Working Group. Drove CPython 3.14 enablement across internal
-toolchains.
+Built the distributed data-quality platform: metrics ingestion, deduplication, workflow orchestration. Designed and
+shipped a self-service storage-platform management portal with authentication and configuration APIs. Standardized SSO
+across multiple services through a shared integration library. Led an accessibility overhaul of the Guild Week
+conference website with keyboard navigation and screen-reader support. Built the internal Python package registry
+frontend and conference platform.
 
 \localsep
 \vskip\bigskipamount %
@@ -125,9 +125,9 @@ toolchains.
 \twoColumns{London, United Kingdom}{ \emph{Software Engineer $\rightarrow$ Senior (2019) -- Data
 Technologies, Quality Control} }
 
-Core developer of the Business Rule Engine, a Python framework enabling financial analysts to author validation rules
-over a microservice platform with automated provenance and quality tracking. Led the Python Guild's Conference Working
-Group (2017--2022) and served as Guild Chair.
+Core developer of the Business Rule Engine, a Python framework that lets financial analysts author validation rules
+over a microservice platform with automated provenance and quality tracking. Chaired the Python Guild and led its
+Conference Working Group (2017--2022).
 
 \localsep
 \vskip\bigskipamount %
@@ -147,18 +147,19 @@ dailymotion\@.com and allegro\@.pl. Handled client integrations, A/B testing, an
 \twoColumns{2015--present}{ \textbf{Open source software developer} }
 \twoColumns{}{\href{https://bernat.tech/about}{bernat.tech/about}}
 
-Author and primary maintainer of 30+ Python open source projects. Maintainer of
-\href{https://github.com/pypa/virtualenv}{virtualenv} and \href{https://github.com/tox-dev/tox}{tox}, both fully
-rewritten under my leadership. Led a virtualenv security hardening initiative and delivered 20+ tox features in 2026
-including PEP 751 lock file support and JSON Schema for IDE integration. Became primary maintainer of
-\href{https://github.com/pypa/build}{build}, achieving 100\% test coverage. Revitalized
-\href{https://github.com/pypa/pipx}{pipx} and modernized \href{https://github.com/tox-dev/pipdeptree}{pipdeptree}.
-Extended \href{https://github.com/tox-dev/filelock}{filelock} for NFS/HPC and async environments. Contributed PEP 751
-lock file support to \href{https://github.com/astral-sh/uv}{uv}. Also maintains
+Author and primary maintainer of 30+ Python open source projects. Rewrote
+\href{https://github.com/pypa/virtualenv}{virtualenv} and \href{https://github.com/tox-dev/tox}{tox} from scratch as
+lead maintainer; both rank among the most-downloaded developer tools on PyPI. Led the virtualenv security hardening
+program and shipped 20+ tox features in 2026 including PEP 751 lock-file support and a JSON Schema for IDE integration.
+Took over \href{https://github.com/pypa/build}{build} as primary maintainer and brought it to 100\% test coverage.
+Revitalized \href{https://github.com/pypa/pipx}{pipx} and modernized
+\href{https://github.com/tox-dev/pipdeptree}{pipdeptree}. Extended
+\href{https://github.com/tox-dev/filelock}{filelock} for NFS/HPC and async environments. Contributed PEP 751 lock-file
+support to \href{https://github.com/astral-sh/uv}{uv}. Also maintains
 \href{https://github.com/tox-dev/platformdirs}{platformdirs},
 \href{https://github.com/tox-dev/sphinx-autodoc-typehints}{sphinx-autodoc-typehints},
-\href{https://github.com/tox-dev/pyproject-fmt}{pyproject-fmt}, \href{https://github.com/tox-dev/tox-uv}{tox-uv},
-\href{https://github.com/bloomberg/pytest-memray}{pytest-memray}. Drove ecosystem-wide security hardening across 20+
+\href{https://github.com/tox-dev/pyproject-fmt}{pyproject-fmt}, \href{https://github.com/tox-dev/tox-uv}{tox-uv}, and
+\href{https://github.com/bloomberg/pytest-memray}{pytest-memray}. Drove security hardening across 20+ ecosystem
 repositories. \href{https://www.python.org/psf/fellows/}{PSF Fellow} (2021 Q3). Blog post series on Python type hints
 reached \#1 on Hacker News.
 
@@ -179,11 +180,12 @@ reached \#1 on Hacker News.
 \vskip\medskipamount %
 
 \begin{tabular}{l p{32em}}
-  \textbf{Languages}      & \emph{Python} (primary), TypeScript, Java, Kotlin, Rust, Go, Bash,
-  Fish, C/C$++$, LaTeX            \\
+  \textbf{Languages}      & \emph{Python} (primary), Go, TypeScript, Rust, Java, Kotlin, C/C$++$                  \\
   \textbf{Frameworks}     & FastAPI, React, Flask                                                                 \\
   \textbf{Infrastructure} & Docker, Kubernetes, Redis, Kafka, PostgreSQL, S3, HAProxy, GitHub Actions, Jenkins     \\
+  \textbf{Standards}      & PEP 751, OAuth2/OIDC, JWT, PKCE, JSON Schema                                          \\
   \textbf{Tools}          & git, vim, tox, uv, ruff, ty, VS Code, IntelliJ IDEA                                   \\
-  \textbf{Specialties}    & Developer tooling, packaging, static analysis, security, distributed systems           \\
+  \textbf{Specialties}    & Developer platforms, API design, packaging, static analysis, supply-chain security,
+  distributed systems \\
 \end{tabular}
 \end{document}
