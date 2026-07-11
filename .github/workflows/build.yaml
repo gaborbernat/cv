@@ -50,3 +50,16 @@ jobs:
         with:
           folder: built
           single-commit: true
+      - name: 🔍 Verify published PDF 🔍
+        env:
+          URL: https://gaborbernat.github.io/cv/main.pdf
+        run: |
+          want=$(sha256sum built/main.pdf | cut -d' ' -f1)
+          for _ in $(seq 1 30); do
+            sleep 15
+            got=$(curl -fsSL --retry 3 "$URL" | sha256sum | cut -d' ' -f1) || continue
+            [ "$got" = "$want" ] && exit 0
+            echo "serving $got, want $want"
+          done
+          echo "::error::$URL did not serve the freshly built PDF; is GitHub Pages enabled for gh-pages?"
+          exit 1
