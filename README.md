@@ -1,5 +1,6 @@
 [![View PDF](https://img.shields.io/badge/View%20as%20PDF-latest%20CV-blue?style=flat-square&logo=docusign)](https://gaborbernat.github.io/cv/main.pdf)
 ![Build LaTeX document](https://github.com/gaborbernat/cv/workflows/Build%20LaTeX%20document/badge.svg)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/gaborbernat/cv/badge)](https://scorecard.dev/viewer/?uri=github.com/gaborbernat/cv)
 
 Contains my resume as a LaTeX document.
 
