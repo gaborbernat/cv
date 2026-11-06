@@ -23,3 +23,11 @@ repos:
     rev: v1.31.1
     hooks:
       - id: zizmor
+  - repo: local
+    hooks:
+      # needs chktex on PATH; TeX Live ships it
+      - id: chktex
+        name: chktex
+        entry: chktex --quiet
+        language: system
+        types: [tex]

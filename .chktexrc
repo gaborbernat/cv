@@ -1,0 +1,4 @@
+# spaced en dashes ("2025 April -- present") are the house style
+WordDash { 2 }
+# an en dash joins two names
+DashExcpt { Python--Rust }
