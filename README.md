@@ -6,7 +6,8 @@ Contains my resume as a LaTeX document.
 
 ## Building
 
-Requires [TeX Live](https://www.tug.org/texlive/) with packages `sectsty`, `dashrule`, and `ifmtarg`.
+Requires [TeX Live](https://www.tug.org/texlive/) with packages `lmodern`, `titlesec`, `enumitem`, `needspace`,
+`microtype`, and `tabularx`.
 
 On macOS via Homebrew:
 
