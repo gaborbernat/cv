@@ -4,11 +4,11 @@
 version: 'v0.0.3'
 workflows:
     '.github/workflows/build.yaml':
-        - 'tox-dev/github-workflows@6.8.0'
+        - 'tox-dev/github-workflows@6.8.3'
     '.github/workflows/scorecard.yaml': []
 dependencies:
-    'tox-dev/github-workflows@6.8.0':
-        ref: '6.8.0'
-        commit: 'sha1-bf1c3ab0aa137d307a07aad844d507af73039387'
+    'tox-dev/github-workflows@6.8.3':
+        ref: '6.8.3'
+        commit: 'sha1-ef0cd88bef592260a48345753b8b509b209ab189'
         owner_id: 20345659
         repo_id: 1426182029
